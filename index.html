@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculater</title>
+</head>
+
+<body>
+  <div class="flex justify-center items-center mt-24">
+    <div>
+
+      <h2 class="text-2xl font-medium text-indigo-600 justify-center flex items-center">calculater App =</h2>
+
+      <div class="bg-slate-800 p-12 rounded-2xl">
+
+        <form class="gap-y-4 rounded-lg" name="form1">
+          <!-- This input box shows the button pressed by the user in calculator. -->
+          <div class="py-6 bg-slate-600 rounded-lg">
+            <input class="mx-6 ml-8 rounded w-[14rem] py-2" id="calc" type="text" name="answer">
+          </div>
+
+          
+          <!-- Display the calculator button on the screen. -->
+          <!-- onclick() function display the number prsses by the user. -->
+          <div class=" mt-[3px] bg-gray-600 mx-2 py-3 rounded-xl rounded-t-none">
+            <div class=" flex items-center justify-center gap-x-4 pt-5">
+              <input
+                class="cursor-pointer px-[16px] py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="1" onclick="form1.answer.value += '1' ">
+
+
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="2" onclick="form1.answer.value += '2' ">
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="3" onclick="form1.answer.value += '3' ">
+
+              <input
+                class="cursor-pointer px-[14px] py-2 bg-yellow-400 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-yellow-500 hover:border-yellow-300 hover:shadow-inner focus:border-blue-500"
+                type="button" value="+" onclick="form1.answer.value += '+' ">
+
+            </div>
+
+
+            <div class="flex justify-center items-center gap-x-4 py-3">
+              <input
+                class="cursor-pointer px-4 py-2  bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="4" onclick="form1.answer.value += '4' ">
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="5" onclick="form1.answer.value += '5' ">
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="6" onclick="form1.answer.value += '6' ">
+
+              <input
+                class="cursor-pointer px-[16px] py-2 bg-yellow-400 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-yellow-500 hover:border-yellow-300 hover:shadow-inner focus:border-blue-500"
+                type="button" value="-" onclick="form1.answer.value += '-' ">
+
+            </div>
+
+            <div class="flex justify-center items-center gap-x-4 ">
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="7" onclick="form1.answer.value += '7' ">
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="8" onclick="form1.answer.value += '8' ">
+
+              <input
+                class="cursor-pointer px-4 py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="9" onclick="form1.answer.value += '9' ">
+
+              <input
+                class="cursor-pointer px-[16px] py-2 bg-yellow-400 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-yellow-500 hover:border-yellow-300 hover:shadow-inner focus:border-blue-500"
+                type="button" value="*" onclick="form1.answer.value += '*' ">
+
+            </div>
+
+            <div class="flex justify-center items-center gap-x-4 py-3">
+
+              <input
+                class="cursor-pointer px-[12px] py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="00" onclick="form1.answer.value += '00' ">
+
+              <input
+                class="cursor-pointer px-[15px] py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="0" onclick="form1.answer.value += '0' ">
+
+              <input
+                class="cursor-pointer px-[17px] py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="." onclick="form1.answer.value += '.' ">
+
+              <input
+                class="cursor-pointer px-[17px] py-2 bg-yellow-400 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-yellow-500 hover:border-yellow-300 hover:shadow-inner focus:border-blue-500"
+                type="button" value="/" onclick="form1.answer.value += '/' ">
+
+            </div>
+
+            <div class="flex mx-7 items-center gap-x-4 pb-3">
+
+              <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+              <input
+                class="cursor-pointer px-[14px] py-2 bg-gray-700 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-gray-800 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) ">
+
+              <!-- Display the Cancel button and erase all data entered by the user. -->
+
+              <input
+                class="cursor-pointer px-[17px] py-2 bg-red-600 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-red-700 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="x" onclick="form1.answer.value = '' " id="clear">
+
+              <input
+                class="cursor-pointer px-[36px] py-2 bg-green-600 text-gray-100 font-medium text-base shadow-2xl border-solid border-gray-600 border-[1px] rounded-md hover:bg-green-700 hover:border-gray-400 hover:shadow-inner focus:border-blue-500"
+                type="button" value="AC" onclick="form1.answer.value = '' " id="AC">
+
+
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

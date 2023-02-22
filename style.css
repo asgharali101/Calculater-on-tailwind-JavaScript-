@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+      @apply bg-slate-400 text-center text-red-400
+}
